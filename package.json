@@ -5,17 +5,29 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
-    "ios": "expo start --ios",
+    "ios": "expo start --ios --device 'iPhone 15 Pro Max'",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~3.1.3",
     "@react-native-firebase/app": "^19.0.1",
     "@react-native-firebase/auth": "^19.0.1",
+    "@react-native-voice/voice": "^3.2.4",
+    "axios": "^1.6.7",
     "expo": "~50.0.11",
+    "expo-dev-client": "~3.3.9",
+    "expo-font": "^11.10.3",
+    "expo-speech": "~11.7.0",
+    "expo-speech-recognition": "^0.0.1",
     "expo-status-bar": "~1.11.1",
     "firebase": "^10.8.1",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-dotenv": "^3.4.11",
+    "react-native-vector-icons": "^10.0.3",
+    "react-native-voice": "^0.3.0",
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
