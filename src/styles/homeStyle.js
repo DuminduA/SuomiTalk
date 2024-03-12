@@ -17,7 +17,6 @@ const homeScreenStyles = StyleSheet.create({
         paddingHorizontal: 20,
         marginTop: 50,
         width: 400,
-        // marginBottom: 130,
     },
     bodyContainer: {
         flexDirection: 'column',

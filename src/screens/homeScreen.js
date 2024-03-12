@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import React,  { useState, useRef, useEffect } from 'react';
 import { 
   View, Text, Button, 
@@ -6,7 +7,6 @@ import {
 import homeScreenStyles from '../styles/homeStyle';
 import Icon from 'react-native-vector-icons/Ionicons';
 import IconAwesome from 'react-native-vector-icons/FontAwesome';
-import Voice from '@react-native-voice/voice';
 
 
 const HomeScreen = ({ user, handleAuthentication }) => {
@@ -98,6 +98,13 @@ const HomeScreen = ({ user, handleAuthentication }) => {
     const onSpeechError = (error) => {
       console.log(error);
     };
+
+    const translate = () => {
+      // Call Open APIs and get the results and display it
+      console.log(englishText)
+
+      setFinText("I am the open API tranlation")
+    }
   
 
   
@@ -127,12 +134,18 @@ const HomeScreen = ({ user, handleAuthentication }) => {
           placeholder='Please type your english text here to translate..'
           />
           <View style={homeScreenStyles.swapIconHolder}>
+          <Button
+          title='Translate'
+          onPress={translate}
+          />
           <TouchableOpacity>
             <Icon name="swap-vertical" size={50} color="#900" />
             </TouchableOpacity>
           </View>
-          <Text style={homeScreenStyles.langText}>Finnish</Text>
+          <Text 
+          style={homeScreenStyles.langText}>Finnish</Text>
           <TextInput 
+          value={finnishText}
           style={homeScreenStyles.textbox} 
           />
         </View>
