@@ -1,4 +1,13 @@
 {
   "name": "SuomiTalk",
-  "displayName": "SuomiTalk"
+  "displayName": "SuomiTalk",
+  "plugins": [
+    [
+      "@react-native-voice/voice",
+      {
+        "microphonePermission": "Allow SuomiTalk to access the microphone",
+        "speechRecognitionPermission": "Allow SuomiTalk to securely recognize user speech"
+      }
+    ]
+  ]  
 }
